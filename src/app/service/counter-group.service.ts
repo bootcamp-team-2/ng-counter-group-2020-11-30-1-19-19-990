@@ -31,4 +31,11 @@ export class CounterGroupService {
     this.counters = new Array<Counter>();
     this.generateNewCounters();
   }
+
+  public resetSum(): number{
+    this.size = 0;
+    this.counters = new Array<Counter>();
+    this.generateNewCounters();
+    return 0;
+  }
 }

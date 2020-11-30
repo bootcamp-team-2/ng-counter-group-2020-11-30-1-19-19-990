@@ -31,4 +31,8 @@ export class CounterGroupComponent implements OnInit {
     return this.counterGroupService.SetSize(size);
   }
 
+  public SetSum(): number{
+    return this.counterGroupService.resetSum();
+  }
+
 }

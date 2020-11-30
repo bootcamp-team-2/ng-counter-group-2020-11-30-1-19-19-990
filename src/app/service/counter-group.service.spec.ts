@@ -28,7 +28,11 @@ describe('CounterGroupService', () => {
 
   it('should reset count of counters when reset size', () => {
     service.SetSize('10');
-
     expect(service.counters.length).toBe(10);
+  });
+
+  it('should reset the sum when resetSum', () => {
+    const sum = service.resetSum();
+    expect(sum).toBe(0);
   });
 });
