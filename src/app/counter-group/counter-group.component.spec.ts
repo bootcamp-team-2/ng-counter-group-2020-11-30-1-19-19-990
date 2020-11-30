@@ -31,4 +31,12 @@ describe('CounterGroupComponent', () => {
   it('should contain counters when create instance', () => {
     expect(component.counters.length).toBe(component.size);
   });
+
+  it('should return sum of all counters when call sum', () => {
+    component.counters[0].account = 1;
+    component.counters[1].account = 2;
+    component.counters[2].account = 3;
+
+    expect(component.sum).toBe(6);
+  })
 });

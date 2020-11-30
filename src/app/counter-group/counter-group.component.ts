@@ -21,4 +21,9 @@ export class CounterGroupComponent implements OnInit {
   public size: number = 5;
 
   public counters!: Array<Counter>;
+
+  public get sum(): number {
+    return this.counters.map(counter => counter.account)
+                        .reduce((a, b) => a + b);
+  }
 }
