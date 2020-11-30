@@ -30,4 +30,13 @@ describe('Counter', () => {
 
     expect(counter.account).toBe(account - 1);
   });
+
+  it('should set account to 0 when call reset', () => {
+    const account = 1;
+    const counter = new Counter(account);
+
+    counter.reset();
+
+    expect(counter.account).toBe(0);
+  })
 });

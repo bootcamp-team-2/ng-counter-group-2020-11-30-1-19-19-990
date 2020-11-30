@@ -12,4 +12,8 @@ export class Counter {
     decrease(): void {
         this.account--;
     }
+
+    reset(): void {
+        this.account = 0;
+    }
 }
