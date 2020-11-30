@@ -3,4 +3,12 @@ export class Counter {
   constructor(account: number = 0){
     this.account = account;
   }
+
+  public Increase(): void{
+    this.account ++;
+  }
+
+  public Decrease(): void{
+    this.account --;
+  }
 }

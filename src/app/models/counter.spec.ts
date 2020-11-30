@@ -14,4 +14,22 @@ describe('Counter', () => {
     const counter = new Counter(account);
     expect(counter.account).toBe(10);
   });
+
+  it('should increase account by 1 when call increase', () => {
+    const account = 0;
+    const counter = new Counter(account);
+
+    counter.Increase();
+
+    expect(counter.account).toBe(account + 1);
+  });
+
+  it('should decrease account by 1 when call increase', () => {
+    const account = 0;
+    const counter = new Counter(account);
+
+    counter.Decrease();
+
+    expect(counter.account).toBe(account - 1);
+  });
 });
