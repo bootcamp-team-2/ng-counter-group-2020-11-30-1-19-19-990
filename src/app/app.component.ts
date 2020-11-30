@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Counter } from './models/counter';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +6,5 @@ import { Counter } from './models/counter';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-counter-group';
-
-  counter = new Counter();
+  isCollapsed = false;
 }
