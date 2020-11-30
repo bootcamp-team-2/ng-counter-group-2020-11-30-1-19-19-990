@@ -14,7 +14,7 @@ export class CounterGroupService {
   public size: number = 5;
   public counters: Array<Counter>;
 
-  private generateNewCounters() {
+  private generateNewCounters(): void {
     for (let step = 0; step < this.size; step++) {
       this.counters.push(new Counter());
     }
