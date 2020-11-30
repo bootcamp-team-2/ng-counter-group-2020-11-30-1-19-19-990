@@ -40,4 +40,15 @@ describe('CounterGroupService', () => {
     // then
     expect(service.counters.length).toBe(10);
   });
+
+  it('should reset size and sum to 0', () => {
+    // given
+    service.setSize('10');
+    // when
+    service.reset();
+    const sum = service.sum();
+    // then
+    expect(service.counters.length).toBe(0);
+    expect(sum).toBe(0);
+  });
 });

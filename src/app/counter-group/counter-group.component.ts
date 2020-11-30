@@ -22,7 +22,9 @@ export class CounterGroupComponent implements OnInit {
   public setSize(newSize: string): void {
     return this.counterGroupService.setSize(newSize);
   }
-
+  public reset(): void{
+    return this.counterGroupService.reset();
+  }
   ngOnInit(): void {
   }
 

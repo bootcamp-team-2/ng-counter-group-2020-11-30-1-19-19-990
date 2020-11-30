@@ -23,6 +23,11 @@ export class CounterGroupService {
     this.generateCounters();
   }
 
+  public reset(): void {
+    this.size = 0;
+    this.generateCounters();
+  }
+
   private generateCounters(): void {
     const counters = new Array<Counter>();
     for (let step = 0; step < this.size; step++) {
@@ -30,4 +35,5 @@ export class CounterGroupService {
     }
     this.counters = counters;
   }
+
 }
