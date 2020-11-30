@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CounterComponent } from '../counter/counter.component';
 import { Counter } from '../models/counter';
 
 @Component({
