@@ -8,6 +8,4 @@ import { Counter } from './models/counter';
 })
 export class AppComponent {
   title = 'ng-counter-group';
-
-  counter = new Counter(10);
 }

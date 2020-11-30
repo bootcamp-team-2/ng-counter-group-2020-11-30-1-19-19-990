@@ -5,11 +5,11 @@ export class Counter {
         this.account = account;
     }
 
-    increase() {
+    increase(): void {
         this.account++;
     }
 
-    decrease() {
+    decrease(): void {
         this.account--;
     }
 }

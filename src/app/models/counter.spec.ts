@@ -8,7 +8,7 @@ describe('Counter', () => {
   it('should set account when create an instance', () => {
     const account = 10;
 
-    let counter = new Counter(account);
+    const counter = new Counter(account);
 
     expect(counter.account).toBe(account);
   });
