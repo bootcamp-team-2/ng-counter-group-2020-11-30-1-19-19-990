@@ -4,4 +4,8 @@ export class Counter {
     constructor(account: number = 0) {
         this.account = account;
     }
+
+    increase() {
+        this.account++;
+    }
 }

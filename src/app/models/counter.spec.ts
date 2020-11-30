@@ -13,4 +13,13 @@ describe('Counter', () => {
     expect(counter.account).toBe(account);
   });
 
+  it('should increase account by 1 when call increase', () => {
+    const account = 0;
+    const counter = new Counter(account);
+
+    counter.increase();
+
+    expect(counter.account).toBe(account + 1);
+  });
+
 });
