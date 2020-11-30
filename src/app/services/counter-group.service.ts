@@ -32,4 +32,9 @@ export class CounterGroupService {
       this.counters.push(new Counter());
     }
   }
+
+  reset(): void {
+    this.size = 0;
+    this.counters = new Array<Counter>();
+  }
 }

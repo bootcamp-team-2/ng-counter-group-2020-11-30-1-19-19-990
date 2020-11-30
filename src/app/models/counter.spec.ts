@@ -38,5 +38,5 @@ describe('Counter', () => {
     counter.reset();
 
     expect(counter.account).toBe(0);
-  })
+  });
 });

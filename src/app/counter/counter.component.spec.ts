@@ -57,5 +57,4 @@ describe('CounterComponent', () => {
     // then
     expect(component.counter.account).toBe(0);
   });
-  
 });

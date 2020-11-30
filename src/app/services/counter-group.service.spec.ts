@@ -23,7 +23,6 @@ describe('CounterGroupService', () => {
   });
 
   it('should return sum of all counters when call sum', () => {
-
     service.counters[0].account = 1;
     service.counters[1].account = 2;
     service.counters[2].account = 3;
@@ -32,9 +31,15 @@ describe('CounterGroupService', () => {
   });
 
   it('should change count of counters when set size', () => {
-
     service.setSize('10');
 
     expect(service.counters.length).toBe(10);
+  });
+
+  it('should reset count of counters when reset size', () => {
+    service.reset();
+
+    expect(service.counters.length).toBe(0);
+    expect(service.size).toBe(0);
   });
 });

@@ -29,4 +29,8 @@ export class CounterGroupComponent implements OnInit {
   public setSize(newSize: string): void {
     this.counterGroupService.setSize(newSize.toString());
   }
+
+  public reset(): void {
+    this.counterGroupService.reset();
+  }
 }
