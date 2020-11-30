@@ -24,11 +24,12 @@ describe('CounterGroupComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should set size when create instance', () => {
-    expect(component.size).toBe(5);
-  });
+  // it('should set size when create instance', () => {
+  //   expect(component.size).toBe(5);
+  // });
 
-  it('should contain counters when create instance', () => {
-    expect(component.counters.length).toBe(component.size);
-  });
+  // it('should contain counters when create instance', () => {
+  //   expect(component.counters.length).toBe(component.size);
+  // });
+
 });
