@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CounterComponent implements OnInit {
 
    constructor() {
-     //this.counter = new Counter();
+     // this.counter = new Counter();
    }
 
   public get account(): number{
@@ -27,6 +27,9 @@ export class CounterComponent implements OnInit {
 
     public decrease(): void {
      this.counter.decrease();
+  }
+  public reset(): void {
+    this.counter.reset();
   }
 
 }

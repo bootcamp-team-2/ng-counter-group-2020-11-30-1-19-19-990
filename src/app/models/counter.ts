@@ -6,10 +6,14 @@ export class Counter {
   }
 
   public increase(): void {
-    this.account ++;
+    this.account++;
   }
 
   public decrease(): void {
-    this.account --;
+    this.account--;
   }
+  public reset(): void {
+    this.account = 0;
+  }
+
 }
