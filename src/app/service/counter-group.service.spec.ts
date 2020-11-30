@@ -30,4 +30,18 @@ describe('CounterGroupService', () => {
     // then
     expect(service.counters.length).toBe(10);
   });
+
+  it('should reset count and number of counters to zero when reset is called', () => {
+    // given
+    service.counters[0].account = 1;
+    service.counters[1].account = 1;
+    service.counters[2].account = 1;
+
+    // when
+    service.reset();
+
+    // then
+    expect(service.counters.length).toBe(0);
+    expect(service.size).toBe(0);
+  });
 });

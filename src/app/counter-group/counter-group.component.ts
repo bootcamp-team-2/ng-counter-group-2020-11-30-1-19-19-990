@@ -26,5 +26,8 @@ export class CounterGroupComponent implements OnInit {
   public get counters(): Array<Counter>{
     return this.counterGroupService.counters;
   }
+  public reset(): void {
+     this.counterGroupService.reset();
+  }
 
 }

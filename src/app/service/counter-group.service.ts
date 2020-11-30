@@ -29,4 +29,9 @@ export class CounterGroupService {
       return result + element.account;
     }, 0);
   }
+
+  public reset(): void {
+    this.setSize('0');
+    // this.sum();
+  }
 }

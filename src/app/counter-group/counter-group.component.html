@@ -1,6 +1,6 @@
-<input type="number" #size (keyup.enter)="setSize(size.value)">
+<input type="number" #size (keyup.enter)="setSize(size.value); size.value = '';">
 <button (click)="setSize(size.value)"> set </button>
 <div *ngFor="let counter of counters">
   <app-counter [counter]="counter"></app-counter>
 </div>
-<label>{{sum()}}</label>
+<label>{{sum()}}</label><button (click)="reset()">reset</button>
