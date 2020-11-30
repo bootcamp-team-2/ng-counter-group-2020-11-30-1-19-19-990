@@ -44,4 +44,17 @@ describe('CounterGroupComponent', () => {
     // then
     expect(sum).toBe(3);
   });
+
+  it('should change count of counters when reset size', () => {
+    // given
+    component.counters[0].account = 1;
+    component.counters[1].account = 1;
+    component.counters[2].account = 1;
+
+    // when
+    component.setSize('10');
+
+    // then
+    expect(component.counters.length).toBe(10);
+  });
 });

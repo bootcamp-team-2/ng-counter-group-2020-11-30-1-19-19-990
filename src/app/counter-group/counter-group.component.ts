@@ -27,4 +27,13 @@ export class CounterGroupComponent implements OnInit {
 
   }
 
+  public setSize(size: string): void{
+    this.size = +size;
+    this.counters = new Array<Counter>();
+    for (let step = 0; step < this.size; step++) {
+      this.counters.push(new Counter());
+    }
+
+  }
+
 }
