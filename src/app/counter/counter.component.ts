@@ -1,6 +1,7 @@
 import { Counter } from './../models/counter';
 import { Component, Input, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
@@ -28,5 +29,7 @@ export class CounterComponent implements OnInit {
   public decrease(): void {
     this.counter.Decrease();
   }
-
+  public reset(): void{
+    this.counter.Reset();
+  }
 }
