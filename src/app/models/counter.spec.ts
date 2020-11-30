@@ -20,5 +20,15 @@ describe('Counter', () => {
     // then
     expect(counter.account).toBe(account + 1);
   });
+
+  it('should minus 1 when decrease', () => {
+    // given
+    const account = 0;
+    // when
+    const counter = new Counter(account);
+    counter.Decrease();
+    // then
+    expect(counter.account).toBe(account - 1);
+  });
 });
 

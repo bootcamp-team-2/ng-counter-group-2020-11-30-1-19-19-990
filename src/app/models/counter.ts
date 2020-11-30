@@ -6,4 +6,7 @@ export class Counter {
   public Increase(): void {
     this.account ++;
   }
+  public Decrease(): void {
+    this.account --;
+  }
 }
