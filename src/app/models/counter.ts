@@ -8,4 +8,8 @@ export class Counter {
     increase() {
         this.account++;
     }
+
+    decrease() {
+        this.account--;
+    }
 }
