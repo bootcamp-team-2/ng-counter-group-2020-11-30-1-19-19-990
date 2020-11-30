@@ -12,4 +12,5 @@ export class CounterGroupComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public size: number = 5;
 }
