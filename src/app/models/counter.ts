@@ -1,11 +1,11 @@
 export class Counter {
   public account: number;
 
-  constructor(account: number = 0){
+  constructor(account: number = 0) {
     this.account = account;
   }
 
-  public increase(){
+  public increase(): void {
     this.account ++;
   }
 }
