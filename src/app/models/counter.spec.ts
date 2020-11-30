@@ -32,4 +32,13 @@ describe('Counter', () => {
 
     expect(counter.account).toBe(account - 1);
   });
+
+  it('should reset the account to 0 when call resetButton', () => {
+    const account = 10;
+    const counter = new Counter(account);
+
+    counter.ResetButton();
+
+    expect(counter.account).toBe(0);
+  });
 });

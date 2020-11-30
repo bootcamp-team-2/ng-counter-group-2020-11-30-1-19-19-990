@@ -29,4 +29,9 @@ export class CounterComponent implements OnInit {
     this.counter.Decrease();
   }
 
+  public resetButton(): void {
+    this.counter.ResetButton();
+
+  }
+
 }

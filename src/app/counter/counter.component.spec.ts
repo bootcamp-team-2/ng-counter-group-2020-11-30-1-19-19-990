@@ -45,4 +45,15 @@ describe('CounterComponent', () => {
     // then
     expect(component.counter.account).toBe(-1);
   });
+
+  it('should reset to 0 when call reset button', () => {
+    // given
+    component.counter.account = -1;
+
+    // when
+    component.resetButton();
+
+    // then
+    expect(component.counter.account).toBe(0);
+  });
 });
