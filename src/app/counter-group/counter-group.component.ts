@@ -19,7 +19,7 @@ export class CounterGroupComponent implements OnInit {
   }
 
   public get sum(): number {
-    return this.counterGroupService.size;
+    return this.counterGroupService.sum;
   }
 
   public get counters(): Array<Counter> {

@@ -16,8 +16,9 @@ export class CounterGroupService {
   public size: number;
 
   public get sum(): number {
-    return this.counters.map(counter => counter.account)
-                        .reduce((a, b) => a + b);
+    return this.counters.reduce((result, element) => {
+      return result + element.account;
+    }, 0);
   }
 
   setSize(size: string): void {
