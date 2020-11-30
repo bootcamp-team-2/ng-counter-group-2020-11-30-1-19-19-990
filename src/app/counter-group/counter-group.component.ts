@@ -8,7 +8,7 @@ import { Counter } from '../models/counter';
 })
 export class CounterGroupComponent implements OnInit {
 
-  constructor() { 
+  constructor() {
     this.counters = new Array<Counter>();
   }
 
@@ -25,8 +25,8 @@ export class CounterGroupComponent implements OnInit {
                         .reduce((a, b) => a + b);
   }
 
-  setSize(size: number) {
-    this.size = size;
+  setSize(size: string) {
+    this.size = +size;
     this.counters = new Array<Counter>();
     this.generateCounters();
   }

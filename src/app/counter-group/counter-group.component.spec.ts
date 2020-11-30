@@ -43,7 +43,7 @@ describe('CounterGroupComponent', () => {
 
   it('should change count of counters when set size', () => {
 
-    component.setSize(10);
+    component.setSize("10");
 
     expect(component.counters.length).toBe(10);
   })
