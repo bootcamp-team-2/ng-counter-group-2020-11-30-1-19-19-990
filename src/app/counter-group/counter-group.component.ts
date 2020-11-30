@@ -13,9 +13,7 @@ export class CounterGroupComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    for (let step = 0; step < this.size; step++) {
-      this.counters.push(new Counter());
-    }
+    this.generateCounters();
   }
 
   public size: number = 5;
@@ -25,5 +23,17 @@ export class CounterGroupComponent implements OnInit {
   public get sum(): number {
     return this.counters.map(counter => counter.account)
                         .reduce((a, b) => a + b);
+  }
+
+  setSize(size: number) {
+    this.size = size;
+    this.counters = new Array<Counter>();
+    this.generateCounters();
+  }
+
+  private generateCounters() {
+    for (let step = 0; step < this.size; step++) {
+      this.counters.push(new Counter());
+    }
   }
 }

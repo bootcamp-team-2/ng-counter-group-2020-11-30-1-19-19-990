@@ -33,10 +33,18 @@ describe('CounterGroupComponent', () => {
   });
 
   it('should return sum of all counters when call sum', () => {
+
     component.counters[0].account = 1;
     component.counters[1].account = 2;
     component.counters[2].account = 3;
 
     expect(component.sum).toBe(6);
+  });
+
+  it('should change count of counters when set size', () => {
+
+    component.setSize(10);
+
+    expect(component.counters.length).toBe(10);
   })
 });
