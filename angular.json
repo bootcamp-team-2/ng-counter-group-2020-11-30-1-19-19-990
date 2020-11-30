@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "ng-counter-group"
+  "defaultProject": "ng-counter-group",
+  "cli": {
+    "analytics": false
+  }
 }
