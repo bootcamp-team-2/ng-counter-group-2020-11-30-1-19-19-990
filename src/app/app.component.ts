@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Counter } from './models/counter';
 
 @Component({
   selector: 'app-root',

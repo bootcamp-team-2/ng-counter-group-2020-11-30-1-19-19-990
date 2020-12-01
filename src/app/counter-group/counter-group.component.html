@@ -1,0 +1,12 @@
+<form>
+    <input #size type="number">
+    <button nz-button (click)="setSize(size.value)">Set Size</button>
+    
+</form>
+<div *ngFor="let counter of counters">
+    <app-counter [counter]="counter"></app-counter>
+</div>
+<label>Sum: {{sum}}</label>
+<div>
+    <button nz-button (click)="reset()">Reset</button>
+</div>
