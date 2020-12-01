@@ -1,0 +1,9 @@
+<div>
+  <input type="number" min="1" max="10" #size (keyup.enter)="SetSize(size.value)">
+  <button nz-button nzType="primary" (click)="SetSize(size.value)">SetSize</button>
+</div>
+<div *ngFor="let counter of counters">
+  <app-counter [counter]="counter"></app-counter>
+</div>
+<br>
+<label>{{Sum()}}</label><button (click)="SetSum()">Reset</button>
